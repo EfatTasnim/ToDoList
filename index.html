@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <section class="todo-outer">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-12">
+          <h1 class="text-center">Todo List</h1>
+          <div class="todo-inner">
+            <div class="form-row">
+              <div class="col-8 mr-sm-2">
+                <input type="text" class="form-control" placeholder="Enter your task" id="addtaskinput" />
+                <input type="text" class="form-control mt-2 p-3" placeholder="Enter your task Details" id="addtaskDetailsinput" />
+                <input type="hidden" id="saveindex">
+              </div>
+              <button type="button" class="btn btn-success mr-sm-2 m-4" id="addtaskbtn">
+                Add Task
+              </button>
+              <button type="button" class="btn btn-success mr-sm-2 m-4" id="savetaskbtn" style="display: none;">
+                Save Task
+              </button>
+              <button type="button" id="deleteallbtn" class="btn btn-danger m-4">
+                Delete All
+              </button>
+            </div>
+            <div class="to-do-output">
+              <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="text-center" id="myId"></p>
+        <p class="text-center" id="myDes"></p>
+        <p class="text-center" id="myDetails"></p>
+        <p class="text-center" id="myStatus"></p>
+      </div>
+    
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+
+  <br> <br/>
+  <br> <br/> 
+  <br> <br/>
+  <br> <br/>
+  <br> <br/>
+  <br> <br/>
+  <br> <br/>
+  <br> <br/>
+  <br> <br/>
+
+ 
+
+
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">
+          
+          This is a simple Javascript to-do list app. User Can insert task (name & description) and follow them as their daily to-do task. Tasks can be updated and removed from the list. User can clear all the task item in one click also.
+        
+        </p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Developed By</h6>
+        <ul class="footer-links">
+          <li><a href=>Imtiaz Mahamud</a></li>
+          <li><a href=>Efat Tasnim</a></li>
+          <li><a href=>Joya Bhattacharja</a></li>
+          <li><a href=>Muna Das</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Submitted To</h6>
+        <ul class="footer-links">
+          <li><a href=>Mr. Wahidul Alam</a></li>
+          <li><a href=>Sr. Lecturer</a></li>
+          <li><a href=>Department of CSE</a></li>
+          <li><a href=>University of Science & Technology Chittagong</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">&copy; Internet and Web Technologies 
+     <a href="#">(CSE 423)</a>
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <!-- <ul class="social-icons"> -->
+         </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
